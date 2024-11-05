@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Batman Tools</title>
+    <style>
+        body {
+            background-color: black;
+            color: yellow; /* Batman's iconic color */
+            font-family: 'Arial', sans-serif;
+            padding: 20px;
+            text-align: center;
+            position: relative;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start; /* Move content slightly upward */
+            align-items: center; /* Center content horizontally */
+            overflow: hidden; /* Prevents overflow from images */
+        }
+        h1 {
+            font-size: 3em;
+            margin-bottom: 5px; /* Further decreased margin to move up more */
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        }
+        p {
+            font-size: 1.5em;
+            max-width: 600px;
+            line-height: 1.5;
+            margin: 0 auto;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+            margin-bottom: 5px; /* Further decreased margin to move up more */
+        }
+        ul {
+            text-align: center;
+            font-size: 1.2em;
+            margin: 10px; /* Decreased margin for the list */
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap; /* Allows the list items to wrap into rows */
+            justify-content: center; /* Center the list */
+        }
+        li {
+            margin: 5px 10px; /* Decreased margin for list items */
+        }
+        .arrow-right {
+            position: absolute; /* Positioning the arrow */
+            bottom: 70px; /* Distance from the bottom */
+            right: 20px; /* Distance from the right */
+            width: 40px; /* Size of the arrow */
+            cursor: pointer; /* Changes the cursor on hover */
+            filter: invert(1); /* Makes the arrow white */
+            z-index: 1; /* Bring the arrow above other content */
+        }
+        .arrow-left {
+            position: absolute; /* Left arrow to go back */
+            bottom: 70px; /* Distance from the bottom */
+            left: 20px; /* Distance from the left */
+            width: 40px;
+            cursor: pointer;
+            filter: invert(1);
+            z-index: 1;
+        }
+    </style>
+</head>
+<body>
+    <h1>Batman Tools</h1>
+    <p>
+        Batman uses a variety of tools and gadgets to aid him in his fight against crime. Some of these include:
+    </p>
+    <ul>
+        <li>Batarang</li>
+        <li>Grapple Gun</li>
+        <li>Smoke Pellets</li>
+        <li>Utility Belt</li>
+        <li>Batmobile</li>
+        <li>Tracking Devices</li>
+        <li>Night Vision Goggles</li>
+    </ul>
+
+    <!-- Image for Batman Tools -->
+    <img src="https://preview.redd.it/waav081o7bz81.png?width=640&crop=smart&auto=webp&s=90125cc8022ab8056f026b589712c5adee7035f3" alt="Batman Tools Image" style="max-width: 80%; height: auto; margin-top: 10px;">
+
+    <!-- Right arrow linking to Batman Enemies -->
+    <a href="fourth-page.html">
+        <img class="arrow-right" src="https://cdn-icons-png.flaticon.com/512/271/271228.png" alt="Go to Batman Enemies">
+    </a>
+
+    <!-- Left arrow linking back to Batman History (second-page.html) -->
+    <a href="second-page.html">
+        <img class="arrow-left" src="https://cdn-icons-png.flaticon.com/512/271/271220.png" alt="Go Back to Batman History">
+    </a>
+</body>
+</html>

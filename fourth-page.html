@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Batman Enemies</title>
+    <style>
+        body {
+            background-color: black;
+            color: red; /* Batman's enemies iconic color */
+            font-family: 'Arial', sans-serif;
+            padding: 20px;
+            text-align: center;
+            position: relative;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start; /* Move content slightly upward */
+            align-items: center; /* Center content horizontally */
+            overflow: hidden; /* Prevents overflow from images */
+        }
+        h1 {
+            font-size: 3em;
+            margin-bottom: 5px; /* Further decreased margin to move up more */
+            text-shadow: 2px 2px 4px rgba(255, 0, 0, 0.7);
+        }
+        p {
+            font-size: 1.5em;
+            max-width: 600px;
+            line-height: 1.5;
+            margin: 0 auto;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+            margin-bottom: 5px; /* Further decreased margin to move up more */
+        }
+        ul {
+            text-align: center;
+            font-size: 1.2em;
+            margin: 10px; /* Decreased margin for the list */
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap; /* Allows the list items to wrap into rows */
+            justify-content: center; /* Center the list */
+        }
+        li {
+            margin: 5px 10px; /* Decreased margin for list items */
+        }
+        .arrow-right {
+            position: absolute; /* Positioning the arrow */
+            bottom: 70px; /* Distance from the bottom */
+            right: 20px; /* Distance from the right */
+            width: 40px; /* Size of the arrow */
+            cursor: pointer; /* Changes the cursor on hover */
+            filter: invert(1); /* Makes the arrow white */
+            z-index: 1; /* Bring the arrow above other content */
+        }
+        .arrow-left {
+            position: absolute; /* Left arrow to go back */
+            bottom: 70px; /* Distance from the bottom */
+            left: 20px; /* Distance from the left */
+            width: 40px;
+            cursor: pointer;
+            filter: invert(1);
+            z-index: 1;
+        }
+        .enemies-image {
+            margin-top: 0; /* Further decreased margin to move up more */
+            max-width: 50%; /* Image resized to be smaller */
+            height: auto;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Batman Enemies</h1>
+    <p>Here are some of the most iconic enemies of Batman:</p>
+    <ul>
+        <li>The Joker</li>
+        <li>Harley Quinn</li>
+        <li>Two-Face</li>
+        <li>The Riddler</li>
+        <li>Bane</li>
+        <li>Poison Ivy</li>
+        <li>Scarecrow</li>
+        <li>Penguin</li>
+        <li>Ra's al Ghul</li>
+    </ul>
+    
+    <!-- The image provided, resized -->
+    <img class="enemies-image" src="https://static1.srcdn.com/wordpress/wp-content/uploads/2023/03/batman-gotham-knights-villains.jpg" alt="Batman Enemies">
+
+    <!-- Right arrow linking to fifth-page.html -->
+    <a href="fifth-page.html">
+        <img class="arrow-right" src="https://cdn-icons-png.flaticon.com/512/271/271228.png" alt="Go to fifth-page.html">
+    </a>
+    
+    <!-- Left arrow linking back to batman tools (third-page.html) -->
+    <a href="third-page.html">
+        <img class="arrow-left" src="https://cdn-icons-png.flaticon.com/512/271/271220.png" alt="Go Back to third-page.html">
+    </a>
+
+    <a href="index.html">
+        <img class="arrow" src="https://cdn-icons-png.flaticon.com/512/271/271228.png" alt="Go to Home">
+    </a>
+</body>
+</html>
