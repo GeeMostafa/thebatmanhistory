@@ -3,14 +3,14 @@ name: Deploy to S3
 on:
   push:
     branches:
-      - main  # Change this to the branch you want to deploy from
+      - main
 
 jobs:
   deploy:
-    runs-on: windows-latest  # Use Windows runner if needed, or ubuntu-latest for Linux
+    runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout code
+    - name: Checkout Code
       uses: actions/checkout@v3
 
     - name: Configure AWS Credentials
@@ -18,7 +18,8 @@ jobs:
       with:
         aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
         aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-        aws-region: us-west-2  # Change to your bucket’s region
+        aws-region: ${{ secrets.AWS_REGION }}
 
-    - name: Sync S3 bucket
-      run: aws s3 sync . s3://thebatmanhistory--1939 --delete
+    - name: Sync to S3
+      run: |
+        aws s3 sync . s3://${{ secrets.AWS_S3_BUCKET }} --delete
